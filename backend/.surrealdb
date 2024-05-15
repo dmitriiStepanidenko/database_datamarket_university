@@ -1,0 +1,9 @@
+[core]
+    path = "./db"
+
+[db]
+    address = "ws://localhost:8000"
+    ns = "test"
+    db = "test"
+    username = "root"
+    password = "root"

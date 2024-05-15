@@ -1,0 +1,2 @@
+[build]
+rustflags = ["--cfg", "surrealdb_unstable"] # That's actually needed for migrations https://github.com/Odonno/surrealdb-migrations/issues/77

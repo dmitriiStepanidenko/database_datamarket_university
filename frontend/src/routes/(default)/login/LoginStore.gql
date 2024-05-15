@@ -1,0 +1,8 @@
+mutation Login($email: String!, $password: String!) {
+  users {
+    login(ctInput: { email: $email, password: $password }) {
+      email
+      id
+    }
+  }
+}

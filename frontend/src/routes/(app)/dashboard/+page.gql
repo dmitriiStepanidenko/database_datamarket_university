@@ -1,0 +1,24 @@
+query ProductionInfoSelectByDate($date: DateTime!){
+  productionInfo {
+    selectByDate(date: $date) {
+      id
+      finalPipe {
+        name
+      }
+      measureUnits {
+        name
+      }
+      date
+      productionPlan {
+        amount
+        units 
+      }
+      salesPlan {
+        amount
+      }
+      productionFact
+
+    }
+  }
+
+}

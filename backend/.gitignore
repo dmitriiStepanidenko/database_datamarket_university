@@ -1,0 +1,8 @@
+/target
+history.txt
+/db_surreal
+*.out*
+*.profraw
+db-data
+_initial.json
+cspell.json

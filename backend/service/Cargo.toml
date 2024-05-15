@@ -1,0 +1,33 @@
+[package]
+name = "service"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+doctest = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-graphql = { workspace = true }
+chrono = { workspace = true }
+jsonwebtoken = { workspace = true }
+serde = { workspace = true }
+surrealdb = { workspace = true, features = [ "sql2" ] }
+tokio = { workspace = true }
+tower-cookies = { workspace = true }
+uuid = { workspace = true }
+argon2 = { workspace = true }
+lazy_static = { workspace = true }
+async-trait = { workspace = true }
+fake = { workspace = true,  features = ["derive", "always-true-rng"] } 
+cookie = { workspace = true }
+rust_decimal = { workspace = true }
+
+common = { path="../common" }
+db = { path="../db" }
+
+[dev-dependencies]
+rstest = { workspace = true } 
+surrealdb = { workspace = true, features = ["kv-mem"] }
+pretty_assertions = { workspace = true }
