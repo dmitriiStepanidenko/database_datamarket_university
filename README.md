@@ -19,3 +19,9 @@
     2. npm run schema
 
     3. npm run dev
+
+# Usage
+
+1. Login through [/login](http://localhost:5173/login) path. email: test@test.com, password: pass2. 
+
+2. Go to [http://localhost:5173/dashboard](http://localhost:5173/dashboard)
